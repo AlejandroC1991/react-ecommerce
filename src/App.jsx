@@ -1,17 +1,18 @@
-import Curso from "./Curso"
-import Footer from "./Footer"
+import CustomNavBar from "./components/CustomNavBar";
+import ItemListContainer from "./components/ItemListContainer";
+import "./App.css";
+
+
+
+
+
 
 const App = () => {
 
-  let name = "Alejandro"
   return (
     <>
-    <h1>Hola</h1>
-    <p>Javascript</p>
-    <Curso curso="javascript" profesor="Gomez" duracion="9" />
-    <Curso curso="react" profesor="messi" duracion="4" />
-    <hr></hr>
-    <Footer />
+    <CustomNavBar />
+    <ItemListContainer />
     </>
   )
 }
