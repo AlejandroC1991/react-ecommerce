@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Hola = () => {
     return(
-        <Navbar bg="black" expand="lg">
+        <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">Luxury Shop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -13,17 +13,16 @@ const Hola = () => {
             <Nav className="me-auto">
               <Nav.Link href="#home">Relojes</Nav.Link>
               <Nav.Link href="#link">Fragancias</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Gafas</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Zapatos</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#link">Gafas</Nav.Link>
+              <Nav.Link href="#link">Zapatos</Nav.Link>
+             
+            </Nav>
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Registrarse</Nav.Link>
+              <Nav.Link href="#link">Sign In</Nav.Link>
+              <Nav.Link href="#link"><AiOutlineShoppingCart /> </Nav.Link>
+              
+             
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -33,3 +32,4 @@ const Hola = () => {
  
 
 export default Hola;
+
