@@ -1,12 +1,9 @@
-import { Component } from "react"
-
-class Footer extends Component{
-render() {
+const Footer = () => {
     return(
-        <p>Soy el footer</p>
-    )
-}
-}
+        <>
+<p>2022 - Alejandro D. CELIBERTO</p>
+</>
 
+)}
 
 export default Footer;

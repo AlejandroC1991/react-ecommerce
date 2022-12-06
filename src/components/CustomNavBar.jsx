@@ -14,7 +14,7 @@ const Hola = () => {
               <Nav.Link href="#home">Relojes</Nav.Link>
               <Nav.Link href="#link">Fragancias</Nav.Link>
               <Nav.Link href="#link">Gafas</Nav.Link>
-              <Nav.Link href="#link">Zapatos</Nav.Link>
+             
              
             </Nav>
             <Nav className="me-auto">
