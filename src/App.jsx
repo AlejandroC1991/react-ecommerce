@@ -1,6 +1,6 @@
 import CustomNavBar from "./components/CustomNavBar";
 import ItemListContainer from "./components/ItemListContainer";
-// import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 import "./App.css";
@@ -17,7 +17,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<ItemListContainer /> } />
       <Route path="/category/:categoryId" element={<ItemListContainer /> } />
-      {/* <Route path="/item/:productoId" element={<ItemDetailContainer />} /> */}
+      <Route path="/item/:idItem" element={<ItemDetailContainer />} />
     </Routes>
     <Footer />
     </BrowserRouter>

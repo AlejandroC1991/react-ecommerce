@@ -2,25 +2,26 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Hola = () => {
     return(
         <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Luxury Shop</Navbar.Brand>
+          <Navbar.Brand><Link to='/' style={{textDecoration: "none", color: "black"}}> Luxury Shop</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Relojes</Nav.Link>
-              <Nav.Link href="#link">Fragancias</Nav.Link>
-              <Nav.Link href="#link">Gafas</Nav.Link>
+              <Nav.Link ><Link to='/category/1' style={{textDecoration: "none", color: "black"}}>Relojes</Link></Nav.Link>
+              <Nav.Link ><Link to='/category/2' style={{textDecoration: "none", color: "black"}}>Fragancias</Link></Nav.Link>
+              <Nav.Link ><Link to='/category/3' style={{textDecoration: "none", color: "black"}}>Gafas</Link></Nav.Link>
              
              
             </Nav>
             <Nav className="me-auto">
-              <Nav.Link href="#home">Registrarse</Nav.Link>
-              <Nav.Link href="#link">Sign In</Nav.Link>
-              <Nav.Link href="#link"><AiOutlineShoppingCart /> </Nav.Link>
+              <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}>Registrarse</Link></Nav.Link>
+              <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}>Sign In</Link></Nav.Link>
+              <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}><AiOutlineShoppingCart /></Link> </Nav.Link>
               
              
             </Nav>

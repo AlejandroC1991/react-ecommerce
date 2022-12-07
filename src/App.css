@@ -54,3 +54,41 @@ justify-content: center;
     justify-content: center;
     
 }
+
+
+.imageProductDetail{
+    width: 90%;
+    height: 80vh;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+.containerImageDetail{
+   width: 40%;
+}
+.propsInfoDetail{
+    width: 60%;
+}
+
+.propsInfoDetail{
+   padding: 5rem;
+}
+
+.titleDetail{
+    font-size: 4rem;
+}
+
+.descriptionDetail{
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.priceDetail{
+    padding-top: 20rem;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.buttonStyle{
+    width: 100%;
+}
