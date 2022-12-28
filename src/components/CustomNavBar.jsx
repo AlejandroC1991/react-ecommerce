@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import CartWidget from "./CartWidget";
+
 
 const Hola = () => {
     return(
@@ -21,7 +22,7 @@ const Hola = () => {
             <Nav className="me-auto">
               <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}>Registrarse</Link></Nav.Link>
               <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}>Sign In</Link></Nav.Link>
-              <Nav.Link ><Link to='/' style={{textDecoration: "none", color: "black"}}><AiOutlineShoppingCart /></Link> </Nav.Link>
+              <Nav.Link ><Link to='/cart' style={{textDecoration: "none", color: "black"}}><CartWidget /></Link> </Nav.Link>
               
              
             </Nav>

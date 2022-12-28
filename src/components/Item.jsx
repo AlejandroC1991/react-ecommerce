@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const Item = (props) => {
     return (
@@ -11,16 +11,20 @@ const Item = (props) => {
             <div className="sizeBody">
                 <h5 className="title">{props.title}</h5>
                 <p className="model">{props.model}</p>
-                <p className="price">{props.precio} usd</p>
-                <p className="quantity">{props.cantidad} unidades</p>
+                <p className="price"><AttachMoneyIcon />{props.precio} </p>
+                <p className="quantity">{props.stock} unidades</p>
 
             </div>
             <div className="d-flex justify-content-center">
-                <button className='btn btn-primary w-25 '><Link to={`/item/${props.id}`} style={{ textDecoration: "none", color: "white" }}>Details</Link></button>
+                <Link to={`/item/${props.id}`} style={{ textDecoration: "none", color: "white" }}><button className='btn btn-primary'>BUY</button></Link>
             </div>
         </div>
+
+
     )
 }
 
 
 export default Item;
+
+

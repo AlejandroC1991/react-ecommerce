@@ -1,35 +1,11 @@
 .style{
     width: 18rem;
-    
-    
+    border: 1px solid black !important;
+    margin-top: 2rem !important;
     padding: 1rem;
-    
+    margin: 1rem;    
 }
 
-.sizeBody{
-
-}
-
-/* .size{
-    width: 18rem !important;
-    height: 36rem !important;
-    margin: 1rem;
-    display: inline-block !important;
-
-}
-
-.centrarBoton{
-    display: flex;
-    justify-content: center;
-    
-}
-*/
-
- .style{
-     width: 200px;
-     margin: 1rem;
-
- }
 .sizeBody {
     
 display: flex;
@@ -52,6 +28,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -84,11 +61,14 @@ justify-content: center;
 }
 
 .priceDetail{
-    padding-top: 20rem;
+    padding-top: 10rem;
     font-weight: 800;
     font-size: 3rem;
+    color: green;
 }
 
 .buttonStyle{
     width: 100%;
 }
+
+
