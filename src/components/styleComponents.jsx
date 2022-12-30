@@ -92,7 +92,22 @@ const ContainerOrderSummary = styled.div`
     
 `;
 
+const Boton = styled.button`
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: ${(props) => props.type === "filled" && "none"};
+  background-color: ${(props) =>
+        props.type === "filled" ? "red" : "transparent"};
+  color: ${(props) => props.type === "filled" && "white"};
+`;
+
+const Texto = styled.span`
+  margin: 0px 10px;
+`;
+
+
 
 export {
-    ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales, ContainerOrderSummary
+    ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales, ContainerOrderSummary, Boton, Texto
 }

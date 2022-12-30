@@ -1,29 +1,12 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from 'react-router-dom';
-import { ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales,ContainerOrderSummary } from './styleComponents';
-import styled from "styled-components";
+import { ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales,ContainerOrderSummary,Boton, Texto } from './styleComponents';
 import { collection, increment, serverTimestamp } from "firebase/firestore";
 import { doc, setDoc, updateDoc } from "firebase/firestore";
 import { db } from "./utils/firebaseConfig";
 import Swal from 'sweetalert2/dist/sweetalert2.all.js'
-import { async } from "@firebase/util";
 import FormatNumber from "./utils/FormatNumber";
-
-const Boton = styled.button`
-  padding: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-        props.type === "filled" ? "red" : "transparent"};
-  color: ${(props) => props.type === "filled" && "white"};
-`;
-
-const Texto = styled.span`
-  margin: 0px 10px;
-`;
-
 
 
 const Cart = () => {

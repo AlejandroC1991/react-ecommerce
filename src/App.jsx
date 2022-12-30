@@ -17,7 +17,6 @@ const App = () => {
     <CartContextProvider>
     <BrowserRouter>
     <CustomNavBar />
-    
     <Routes>
       <Route path="/" element={<ItemListContainer /> } />
       <Route path="/category/:categoryId" element={<ItemListContainer /> } />
