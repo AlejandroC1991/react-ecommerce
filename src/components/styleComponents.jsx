@@ -83,6 +83,16 @@ font-size: 20px;
 width: 30%;
 `;
 
+const ContainerOrderSummary = styled.div`
+    border: 2px solid black;
+    margin-top: 2.5rem ;
+    padding: .6rem;
+    margin: 1rem;  
+    width: 25%;  
+    
+`;
+
+
 export {
-    ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal,ValorSubtotales
+    ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales, ContainerOrderSummary
 }

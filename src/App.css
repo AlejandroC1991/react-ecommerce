@@ -1,9 +1,10 @@
 .style{
-    width: 18rem;
-    border: 1px solid black !important;
-    margin-top: 2rem !important;
-    padding: 1rem;
+    width: 18rem !important;
+    border: 2px solid black !important;
+    margin-top: 2.5rem !important;
+    padding: .6rem;
     margin: 1rem;    
+    box-shadow: 5px 5px black;
 }
 
 .sizeBody {
@@ -70,5 +71,4 @@ justify-content: center;
 .buttonStyle{
     width: 100%;
 }
-
 

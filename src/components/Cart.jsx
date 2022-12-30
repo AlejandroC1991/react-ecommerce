@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from 'react-router-dom';
-import { ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales } from './styleComponents';
+import { ContainerCart, TituloCart, CartProduct, Product, ProductDetail, PriceDetail, ProductQuantityContainer, ProductQuantity, PriceProduct, Top, Details, TotalPrice, TituloCartTotal, Subtotal, ContainerSubtotal, ValorSubtotales,ContainerOrderSummary } from './styleComponents';
 import styled from "styled-components";
 import { collection, increment, serverTimestamp } from "firebase/firestore";
 import { doc, setDoc, updateDoc } from "firebase/firestore";
@@ -118,7 +118,7 @@ const Cart = () => {
             </CartProduct>
             {
                 cartBuy.cartList.length > 0 &&
-                <div>
+                <ContainerOrderSummary>
                     <TituloCartTotal>ORDER SUMMARY</TituloCartTotal>
                     <ContainerSubtotal>
                         <Subtotal>Subtotal</Subtotal>
@@ -141,7 +141,7 @@ const Cart = () => {
                         <ValorSubtotales><FormatNumber number={cartBuy.calculoTotal()} /></ValorSubtotales>
                     </ContainerSubtotal>
                     <button onClick={orderCreate}className='btn btn-primary' >CHECKOUT NOW</button>
-                </div>
+                </ContainerOrderSummary>
             }
         </ContainerCart>
     );

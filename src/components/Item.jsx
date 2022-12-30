@@ -19,6 +19,7 @@ const Item = (props) => {
                 <Link to={`/item/${props.id}`} style={{ textDecoration: "none", color: "white" }}><button className='btn btn-primary'>BUY</button></Link>
             </div>
         </div>
+  
 
 
     )
